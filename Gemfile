@@ -56,4 +56,8 @@ end
 
 gem 'rails_12factor', group: :production
 
+gem 'sqlite3'
+
+gem 'pg'
+
 ruby "2.3.3"
