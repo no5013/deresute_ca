@@ -56,4 +56,6 @@ gem 'rails_12factor', group: :production
 
 gem 'pg'
 
+gem 'react-rails'
+
 ruby "2.3.3"
