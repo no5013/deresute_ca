@@ -56,4 +56,8 @@ gem 'rails_12factor', group: :production
 
 gem 'pg'
 
+gem 'react-rails'
+
+gem "figaro"
+
 ruby "2.3.3"
