@@ -4,7 +4,7 @@ class CreateIdols < ActiveRecord::Migration[5.0]
       t.string :image
       t.string :name
       t.integer :height
-      t.integer :age
+      t.string :age
       t.float :weight
       t.date :birthday
       t.string :pref_hand
