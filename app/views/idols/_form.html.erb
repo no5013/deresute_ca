@@ -1,0 +1,92 @@
+<%= form_for(idol) do |f| %>
+  <% if idol.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(idol.errors.count, "error") %> prohibited this idol from being saved:</h2>
+
+      <ul>
+      <% idol.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :height %>
+    <%= f.number_field :height %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age %>
+    <%= f.number_field :age %>
+  </div>
+
+  <div class="field">
+    <%= f.label :weight %>
+    <%= f.text_field :weight %>
+  </div>
+
+  <div class="field">
+    <%= f.label :birthday %>
+    <%= f.date_select :birthday %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pref_hand %>
+    <%= f.text_field :pref_hand %>
+  </div>
+
+  <div class="field">
+    <%= f.label :blood_type %>
+    <%= f.text_field :blood_type %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bust %>
+    <%= f.number_field :bust %>
+  </div>
+
+  <div class="field">
+    <%= f.label :waist %>
+    <%= f.number_field :waist %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hip %>
+    <%= f.number_field :hip %>
+  </div>
+
+  <div class="field">
+    <%= f.label :zodiac %>
+    <%= f.text_field :zodiac %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hometown %>
+    <%= f.text_field :hometown %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hobby %>
+    <%= f.text_area :hobby %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cv %>
+    <%= f.text_field :cv %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
